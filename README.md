@@ -35,8 +35,8 @@
 
 	* 기본 기능
 	    유저 로그인 가능
-		    로그인, 회원가입 - Back-end(웹)로컬DB에 정보 저장, 조회
-		    계정찾기(email)  - 회원정보 DB조회 후 email로 정보전송
+		    로그인, 회원가입	Back-end(웹)로컬DB에 정보 저장, 조회
+		    계정찾기(email)	회원정보 DB조회 후 email로 정보전송
 	* 게임 기능
 		    입장/퇴장, 직전승리에 따른 패 순서, 방향 부여
 		    화투 패 배분 (ObjectAnimator & TranslateAnimation)
