@@ -225,7 +225,7 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 ##### 　　![table](https://user-images.githubusercontent.com/65906245/208213309-6b704001-a5ac-4cef-b867-cec3229714e9.PNG)
 ##### 　JSP
 ##### 　　[1. Jsp 구성](#목차)
->>java src 
+>java src 
 >>>[CreateNick](#createnickjava)<br/>
 >>>[CreateNickRegister](#createnickregisterjava)<br/>
 >>[FindAccount](#findaccountjava)<br/>
