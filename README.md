@@ -226,26 +226,21 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 #### 　JSP
 ##### 　[1. Jsp 구성](#목차)
 >java src 
->>[CreateNick](#createnickjava)<br/>
->>[CreateNickRegister](#createnickregisterjava)<br/>
->>[FindAccount](#findaccountjava)<br/>
->>[FindAccountRegister](#findaccountregisterjava)<br/>
->>[GameTable](#gametablejava)<br/>
->>[LoginActivity](#loginactivityjava)<br/>
->>[LoginRegister](#loginregisterjava)<br/>
->>[mainPage](#mainpagejava)<br/>
->>[SignupActivity](#signupactivityjava)<br/>
->>[SignupRegister](#signupregisterjava)<br/>
->>[UserInfo](#userinfojava)<br/>
->>[UserInfoRegister](#userinfojava)<br/>
+>>[CreateNick](#)<br/>
+>>[FindAccount](#)<br/>
+>>[GetUserInfo](#)<br/>
+>>[MailAuth](#)<br/>
+>>[MailSend](#)<br/>
+>>[SigninDB](#)<br/>
+>>[SignupDB](#loginregisterjava)<br/>
 
->xml layout
->>[activity_create_nick](#activity_create_nickxml)<br/>
->>[activity_find_account](#activity_find_accountxml)<br/>
->>[activity_game_table](#activity_game_tablexml)<br/>
->>[activity_login](#activity_loginxml)<br/>
->>[activity_main_page](#activity_main_pagexml)<br/>
->>[activity_signup](#activity_signupxml)<br/><br/>
+>web src
+>>[web.xml](#)<br/>
+>>[createnick.jsp](#)<br/>
+>>[findAccount.jsp](#)<br/>
+>>[getuserinfo.jsp](#)<br/>
+>>[signin.jsp](#)<br/>
+>>[signup.jsp](#)<br/><br/>
 ##### 　[2. code comment(web)](#목차)
 #### 　JAVA socket
 ##### 　[1. JAVA socket 구성](#목차)
