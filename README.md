@@ -225,28 +225,28 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 ##### 　　　![table](https://user-images.githubusercontent.com/65906245/208213309-6b704001-a5ac-4cef-b867-cec3229714e9.PNG)
 ##### 　JSP
 ##### 　　　[1. Jsp 구성](#목차)
-			>java src 
-			>>[CreateNick](#createnickjava)<br/>
-			>>[CreateNickRegister](#createnickregisterjava)<br/>
-			>>[FindAccount](#findaccountjava)<br/>
-			>>[FindAccountRegister](#findaccountregisterjava)<br/>
-			>>[GameTable](#gametablejava)<br/>
-			>>[LoginActivity](#loginactivityjava)<br/>
-			>>[LoginRegister](#loginregisterjava)<br/>
-			>>[mainPage](#mainpagejava)<br/>
-			>>[SignupActivity](#signupactivityjava)<br/>
-			>>[SignupRegister](#signupregisterjava)<br/>
-			>>[UserInfo](#userinfojava)<br/>
-			>>[UserInfoRegister](#userinfojava)<br/>
+>java src 
+>>[ 　　　CreateNick](#createnickjava)<br/>
+>>[ 　　　CreateNickRegister](#createnickregisterjava)<br/>
+>>[ 　　　FindAccount](#findaccountjava)<br/>
+>>[FindAccountRegister](#findaccountregisterjava)<br/>
+>>[GameTable](#gametablejava)<br/>
+>>[LoginActivity](#loginactivityjava)<br/>
+>>[LoginRegister](#loginregisterjava)<br/>
+>>[mainPage](#mainpagejava)<br/>
+>>[SignupActivity](#signupactivityjava)<br/>
+>>[SignupRegister](#signupregisterjava)<br/>
+>>[UserInfo](#userinfojava)<br/>
+>>[UserInfoRegister](#userinfojava)<br/>
 
-			>xml layout
-			>>[activity_create_nick](#activity_create_nickxml)<br/>
-			>>[activity_find_account](#activity_find_accountxml)<br/>
-			>>[activity_game_table](#activity_game_tablexml)<br/>
-			>>[activity_login](#activity_loginxml)<br/>
-			>>[activity_main_page](#activity_main_pagexml)<br/>
-			>>[activity_signup](#activity_signupxml)<br/><br/>
-			##### 　　　[2. code comment(web)](#목차)
+>xml layout
+>>[activity_create_nick](#activity_create_nickxml)<br/>
+>>[activity_find_account](#activity_find_accountxml)<br/>
+>>[activity_game_table](#activity_game_tablexml)<br/>
+>>[activity_login](#activity_loginxml)<br/>
+>>[activity_main_page](#activity_main_pagexml)<br/>
+>>[activity_signup](#activity_signupxml)<br/><br/>
+##### 　　　[2. code comment(web)](#목차)
 ##### 　JAVA socket
 ##### 　　　[1. JAVA socket 구성](#목차)
 ##### 　　　[2. code comment(socekt)](#목차)
