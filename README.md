@@ -240,7 +240,7 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 >>[findAccount.jsp](#)<br/>
 >>[getuserinfo.jsp](#)<br/>
 >>[signin.jsp](#)<br/>
->>[signup.jsp](#)<br/><br/>
+>>[signup.jsp](#)<br/>
 ##### 　[2. code comment(web)](#목차)
 #### 　JAVA socket
 ##### 　[1. JAVA socket 구성](#목차)
