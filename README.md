@@ -226,9 +226,9 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 ##### 　JSP
 ##### 　　　[1. Jsp 구성](#목차)
 >java src 
->>[ 　　　CreateNick](#createnickjava)<br/>
->>[ 　　　CreateNickRegister](#createnickregisterjava)<br/>
->>[ 　　　FindAccount](#findaccountjava)<br/>
+>>[CreateNick](#createnickjava)<br/>
+>>[CreateNickRegister](#createnickregisterjava)<br/>
+>>[FindAccount](#findaccountjava)<br/>
 >>[FindAccountRegister](#findaccountregisterjava)<br/>
 >>[GameTable](#gametablejava)<br/>
 >>[LoginActivity](#loginactivityjava)<br/>
