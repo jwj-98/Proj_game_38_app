@@ -220,11 +220,11 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 
 ## [Back-End](#목차)<br/>
 
-#### 　DB
-##### 　[1. 테이블 설계](#목차)
-##### 　![table](https://user-images.githubusercontent.com/65906245/208213309-6b704001-a5ac-4cef-b867-cec3229714e9.PNG)
-#### 　JSP
-##### 　[1. Jsp 구성](#목차)
+## DB
+### [1. 테이블 설계](#목차)
+# ![table](https://user-images.githubusercontent.com/65906245/208213309-6b704001-a5ac-4cef-b867-cec3229714e9.PNG)
+## JSP
+### [1. Jsp 구성](#목차)
 >java src 
 >>[CreateNick](#createnick)<br/>
 >>[FindAccount](#findaccount)<br/>
@@ -257,6 +257,6 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 
 #### [SignupDB](#1-jsp-구성)<br/>
 
-#### 　JAVA socket
-##### 　[1. JAVA socket 구성](#목차)
-##### 　[2. code comment(socekt)](#목차)
+## JAVA socket
+### [1. JAVA socket 구성](#목차)
+### [2. code comment(socekt)](#목차)
