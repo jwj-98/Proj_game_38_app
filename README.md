@@ -226,13 +226,13 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 #### 　JSP
 ##### 　[1. Jsp 구성](#목차)
 >java src 
->>[CreateNick](#)<br/>
->>[FindAccount](#)<br/>
->>[GetUserInfo](#)<br/>
->>[MailAuth](#)<br/>
->>[MailSend](#)<br/>
->>[SigninDB](#)<br/>
->>[SignupDB](#loginregisterjava)<br/>
+>>[CreateNick](#createnick)<br/>
+>>[FindAccount](#findaccount)<br/>
+>>[GetUserInfo](#getuserinfo)<br/>
+>>[MailAuth](#mailauth)<br/>
+>>[MailSend](#mailsend)<br/>
+>>[SigninDB](#signindb)<br/>
+>>[SignupDB](#signupdb)<br/>
 
 >web src
 >>[web.xml](#)<br/>
@@ -241,7 +241,22 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 >>[getuserinfo.jsp](#)<br/>
 >>[signin.jsp](#)<br/>
 >>[signup.jsp](#)<br/>
-##### 　[2. code comment(web)](#목차)
+##### 　[2. code comment(web)](#목차)<br/>
+
+#### [CreateNick](#1-jsp-구성)<br/>
+
+#### [FindAccount](#1-jsp-구성)<br/>
+
+#### [GetUserInfo](#1-jsp-구성)<br/>
+
+#### [MailAuth](#1-jsp-구성)<br/>
+
+#### [MailSend](#1-jsp-구성)<br/>
+
+#### [SigninDB](#1-jsp-구성)<br/>
+
+#### [SignupDB](#1-jsp-구성)<br/>
+
 #### 　JAVA socket
 ##### 　[1. JAVA socket 구성](#목차)
 ##### 　[2. code comment(socekt)](#목차)
