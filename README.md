@@ -241,7 +241,7 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 >>[getuserinfo.jsp](#)<br/>
 >>[signin.jsp](#)<br/>
 >>[signup.jsp](#)<br/>
-##### 　[2. code comment(web)](#목차)<br/>
+### [2. code comment(web)](#목차)<br/>
 
 #### [CreateNick](#1-jsp-구성)<br/>
 
