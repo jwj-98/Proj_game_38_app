@@ -44,7 +44,7 @@
 
 ### [2. 프로젝트 개발환경](#목차)<br/><br/>
 &nbsp;&nbsp; OS: WINDOWS10<br/>
-&nbsp;&nbsp; IDE: ECLIPSE 4, Android Studio 4<br/>
+&nbsp;&nbsp; IDE: ECLIPSE 4, Android Studio 4, IntelliJ<br/>
 &nbsp;&nbsp; DB: Oracle 11g<br/>
 
 ### [3. 프로젝트 동작](#목차)<br/><br/>
