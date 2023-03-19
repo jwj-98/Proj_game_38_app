@@ -235,28 +235,51 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 >>[SignupDB](#signupdb)<br/>
 
 >web src
->>[web.xml](#)<br/>
->>[createnick.jsp](#)<br/>
->>[findAccount.jsp](#)<br/>
->>[getuserinfo.jsp](#)<br/>
->>[signin.jsp](#)<br/>
->>[signup.jsp](#)<br/>
+>>[web.xml](#webxml)<br/>
+>>[createnick.jsp](#createnickjsp)<br/>
+>>[findAccount.jsp](#findaccountjsp)<br/>
+>>[getuserinfo.jsp](#getuserinfojsp)<br/>
+>>[signin.jsp](#signinjsp)<br/>
+>>[signup.jsp](#signupjsp)<br/>
 ### [2. code comment(web)](#목차)<br/>
 
 #### [CreateNick](#1-jsp-구성)<br/>
+	oracle sql 접근정보 필드 구성
+	createNick(id, nick) 메서드 - sql에서 id매개변수와 일치하는 tuple의 nick매개변수 UPDATE 
 
 #### [FindAccount](#1-jsp-구성)<br/>
+	findAccount(name, email) 메서드 - sql에서 name, email과 일치하는 tuple의 ID,PW를 리턴합니다.
 
 #### [GetUserInfo](#1-jsp-구성)<br/>
+	getUserInfo(id) 메서드 - sql에서 id와 일치하는 tuple의 ID, NICK, GOLD를 리턴합니다.
 
 #### [MailAuth](#1-jsp-구성)<br/>
+	생성자 - mail사용을 위한 인증정보 구성
 
 #### [MailSend](#1-jsp-구성)<br/>
+	생성자 - smtp를 이용하여 mail매개변수로 계정찾기결과 smsg매개변수값을 보냅니다.
 
 #### [SigninDB](#1-jsp-구성)<br/>
+	signinDB(id, pw) 메서드 - sql에서 id, pw와 일치하는 tuple의 여부에 따라 값을 리턴합니다.
 
 #### [SignupDB](#1-jsp-구성)<br/>
+	signupConnDB(name, id, pw, email, gender) 메서드 - sql에서 중복되는 id가없다면 새로운 tuple을 INSERT하고 결과를 리턴합니다.
+	
+#### [web.xml](#1-jsp-구성)<br/>
+
+#### [createnick.jsp](#1-jsp-구성)<br/>
+
+#### [findAccount.jsp](#1-jsp-구성)<br/>
+
+#### [getuserinfo.jsp](#1-jsp-구성)<br/>
+
+#### [signin.jsp](#1-jsp-구성)<br/>
+
+#### [signup.jsp](#1-jsp-구성)<br/>
 
 ## JAVA socket
 ### [1. JAVA socket 구성](#목차)
 ### [2. code comment(socekt)](#목차)
+
+
+web서버에서 다수의 요청에 대비해 db접근 클래스들 인스턴스를 singleton 패턴을 사용해봤는데 해당 요청에서는 제대로 동작하는지 모르겠다. 이해가 어렵다.
