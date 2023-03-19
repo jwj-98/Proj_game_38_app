@@ -269,20 +269,20 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 	서블릿 맵핑을 위한 설정 구성
 
 #### [createnick.jsp](#1-jsp-구성)<br/>
-	Input된 값으로 CreateNick을 이용해 사용자 닉네임을 생성합니다.
+	Input된 값으로 CreateNick Class를 이용해 사용자 닉네임을 생성합니다.
 
 #### [findAccount.jsp](#1-jsp-구성)<br/>
-	Input된 값으로 FindAccount를 이용해 계정을 찾고 결과를 리턴하고 MailSend를 이용해 메일로 전송합니다.
+	Input된 값으로 FindAccount Class를 이용해 계정을 찾고 결과를 리턴하고 MailSend를 이용해 메일로 전송합니다.
 
 #### [getuserinfo.jsp](#1-jsp-구성)<br/>
-	Input된 값으로 getUserInfo를 이용해 유저 정보를 가져오고 값을 리턴합니다.
+	Input된 값으로 getUserInfo Class를 이용해 유저 정보를 가져오고 값을 리턴합니다.
 
 #### [signin.jsp](#1-jsp-구성)<br/>
-	Input된 값으로 signinDB를 이용해 사용자 로그인 여부를 리턴합니다.
+	Input된 값으로 signinDB Class를 이용해 사용자 로그인 여부를 리턴합니다.
 
 #### [signup.jsp](#1-jsp-구성)<br/>
-	Input된 값으로 signupDB를 이용해 사용자 계정을 생성하고 성공여부를 리턴합니다.
-	
+	Input된 값으로 signupDB Class를 이용해 사용자 계정을 생성하고 성공여부를 리턴합니다.
+
 ## JAVA socket
 ### [1. JAVA socket 구성](#목차)
 ### [2. code comment(socekt)](#목차)
