@@ -1,0 +1,13 @@
+# 빌드 결과물
+out/
+build/
+*.class
+.gradle/
+# IDE
+.idea/
+*.iml
+local.properties
+# 라이브러리·서버 본체는 저장소에 넣지 않음
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+apache-tomcat-*/

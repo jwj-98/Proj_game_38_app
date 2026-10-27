@@ -11,6 +11,7 @@
 ##### 　　　II. [프로젝트 개발환경](#2-프로젝트-개발환경)
 ##### 　　　III. [프로젝트 동작](#3-프로젝트-동작)
 ##### 　　　IV. [실행 영상](#4-실행-영상)
+#### * [폴더 구조 및 서버 실행](#폴더-구조-및-서버-실행)
 #### * [Front-End(Android App)](#front-endandroid-app)
 ##### 　　　I. [레이아웃, 클래스 구성](#1레이아웃-클래스-구성)
 ##### 　　　II. [Code comment](#2code-commentapp)
@@ -58,6 +59,29 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 +) Json과같은 구조 사용없이 거의 모든통신을 수동으로,각 데이터를 세미콜론 단위로 구분하는  get방식과 유사한 방식을 사용해 통신합니다.(socket & http-post method)<br/>
 
 ### [4. 실행 영상](#목차)<br/><br/>
+<hr/>
+
+## [폴더 구조 및 서버 실행](#목차)<br/>
+
+```
+android_src/            안드로이드 앱 (Front-end)
+server/jsp-web/         JSP 웹 서버 - 로그인/회원가입/계정찾기, Oracle DB 연동
+  src/com/db/             DB·메일 처리 클래스
+  web/                    JSP 페이지, WEB-INF/web.xml
+server/socket-server/   Java TCP 게임 서버 (포트 9001)
+```
+
+* JSP 웹 서버: Tomcat 9 + Oracle 11g XE. `ojdbc6.jar`, `mail-1.4.7.jar`, `activation-1.1.1.jar`를 `WEB-INF/lib`에 넣어 실행합니다.
+  DB와 메일 계정 정보는 코드에 넣지 않고 환경변수로 읽습니다.
+
+  | 환경변수 | 내용 |
+  |---|---|
+  | `DB_URL` | 기본값 `jdbc:oracle:thin:@127.0.0.1:1521:XE` |
+  | `DB_USER`, `DB_PASSWORD` | Oracle 계정 |
+  | `MAIL_ID`, `MAIL_APP_PASSWORD` | 계정찾기 메일 발송용 Gmail 주소와 앱 비밀번호 |
+
+* 게임 서버: `javac -encoding UTF-8 -d out server/socket-server/src/game_server/*.java && java -cp out game_server.TCPServer`
+
 <hr/>
 
 ## [Front-End(Android App)](#목차)<br/>
@@ -298,7 +322,37 @@ Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로�
 
 ## JAVA socket
 ### [1. JAVA socket 구성](#목차)
+>java src (`server/socket-server/src/game_server`)
+>>[TCPServer](#tcpserver)<br/>
+>>[ServerThread](#serverthread)<br/>
+>>[ShareArea](#sharearea)<br/>
+>>[UserInfo, UserSequence, RoomInfo](#userinfo-usersequence-roominfo)<br/>
+>>[TCPClientExample](#tcpclientexample)<br/>
+
 ### [2. code comment(socekt)](#목차)
+
+#### [TCPServer](#1-java-socket-구성)<br/>
+	9001번 포트로 서버 소켓을 열고 접속을 기다립니다.
+	접속한 유저에게 비어있는 순번(1~5)을 부여하고 유저마다 ServerThread를 생성합니다.
+	게임 중이 아니고 참여 인원이 2명 이상이면 가장 앞선 순번에게 ready(게임시작 트리거)를 보냅니다.
+
+#### [ServerThread](#1-java-socket-구성)<br/>
+	유저 1명과의 통신을 담당하는 스레드. 세미콜론(;)으로 구분된 요청을 처리합니다.
+	join  - 참여중인 유저 정보를 보내고, 내 정보를 다른 유저에게 broadcast
+	exit  - 순번 반납, 퇴장 broadcast, 다음 순번에게 ready 부여
+	call  - 배팅 단계(1~4)에 따라 패 섞기 → 첫 장 배분(throw) → 두 번째 장 배분(throw2)
+	        → 패 공개(flip) 및 족보 결과(result) → 판 정리(clear)
+
+#### [ShareArea](#1-java-socket-구성)<br/>
+	모든 스레드가 synchronized로 공유하는 객체.
+	유저 순번/ID, broadcast용 출력 스트림 목록, 화투패 20장, 게임 진행 상태를 관리합니다.
+	re(card1, card2) - 두 패로 족보(광땡, 땡, 끗, 망통)를 판정합니다.
+
+#### [UserInfo, UserSequence, RoomInfo](#1-java-socket-구성)<br/>
+	유저 정보/순번/방 정보용 데이터 클래스 (RoomInfo는 미사용)
+
+#### [TCPClientExample](#1-java-socket-구성)<br/>
+	서버 접속 테스트용 클라이언트
 
 
 web서버에서 다수의 요청에 대비해 db접근 클래스들 인스턴스를 singleton 패턴을 사용해봤는데 해당 상황에서 제대로 동작하는지 모르겠다. 이해가 어렵다.
